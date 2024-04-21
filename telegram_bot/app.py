@@ -240,7 +240,7 @@ def error(update, context):
     print(f'Update {update} caused error {context.error}')
 
 app = (
-    ApplicationBuilder().token("6705448405:AAGWxUzcOEu2lm9og46H2GsO0L7C2IuuYrM").build()
+    ApplicationBuilder().token('token').build()
 )
 
 app.add_handler(CommandHandler("hello", hello))
