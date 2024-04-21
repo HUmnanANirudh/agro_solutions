@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro-farm</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <div class="nav">
+    <nav role="full-horizontal">
+      <ul>
+        <div class="logo"><img src="logo.png"></div>
+        <div class="name">Agro-Farm</div>
+        <li> <a href="#">Home</a> </li>
+        <li> <a href="#">About Us</a> </li>
+        <li> <a href="cf.html" target="_blank">Contract Farming</a> </li>
+        <li> <a href="#">Waste Collection</a> </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="slidermain">
+    <div class="slideshow-container">
+      <!-- Slide 1 -->
+      <div class="mySlides fade">
+        <img src="img5.jpg" alt="Slide 1" style="width: 100%;">
+      </div>
+      <!-- Slide 2 -->
+      <div class="mySlides fade">
+        <img src="img2.jpg" alt="Slide 2" style="width: 100%;">
+      </div>
+      <!-- Slide 3 -->
+      <div class="mySlides fade">
+        <img src="img3.jpg" alt="Slide 3" style="width: 100%;">
+      </div>
+      <!-- Slide 4 -->
+      <div class="mySlides fade">
+        <img src="img4.jpg" alt="Slide 4" style="width: 100%;">
+      </div>
+    </div>
+    <!-- Navigation dots -->
+    <div class="dots" style="text-align: center;">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <marquee behavior="scroll" scrollamount="6" direction="left" onmouseover="this.stop();" onmouseout="this.start();"
+      style="font-size:18px; width:100%;">Join Our platform to promote"Farmers First"</marquee>
+  </div>
+  <div class="contract_farming">
+    <div class="cf_img"><img src="img1.jpg"></div>
+    <div class="cf_content"><p>Facilitating mutually beneficial contract farming agreements between farmers and businesses. Connecting growers with secured crop contracts from major entrepreneurships.</p>
+    <button>Get Started<a href=""></a></button>
+    </div>
+  </div>
+  <div class="agro_waste">
+    
+    <div class="aw_content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga cupiditate dignissimos
+      quasi quas quos molestiae aliquid enim, quisquam quia nesciunt minus, rerum corrupti libero. Minus in recusandae
+      tempora facere.</p>
+    <button>Get Started<a href=""></a></button>
+    </div>
+    <div class="aw_img"><img src="img1.jpg"></div>
+    </div>
+  </div>
+  <div class="about_us">
+    <div class="about_us_title">ABOUT US
+      
+    </div>
+    <div class="about_us_content">In India, small-scale farmers often face challenges in getting fair prices and market access for their crops. Our project aims to bridge this gap by creating an online platform that connects farmers directly with contractors and buyers.
+
+      Farmers can easily list their produce through this user-friendly interface and get competitive offers from interested contractors. This transparent process ensures farmers receive better rates than the government-mandated minimum selling prices.
+      
+      By eliminating the middlemen, our platform maximizes the profits for hardworking farmers while providing contractors with a reliable source of high-quality agricultural goods. We envision a future where Indian farmers have equal opportunities to thrive and are empowered to get the best value for their labor.</div>
+  </div>
+  <div class="footer">
+    <h2>Agro-Farm</h2>
+
+  </div>
+</body>
+
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let slideIndex = 0;
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex = (slideIndex + 1) % slides.length;
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex].style.display = "block";
+      dots[slideIndex].className += " active";
+      setTimeout(showSlides, 2000); // Change 2000 to the desired interval in milliseconds
+    }
+
+    showSlides();
+  });
+
+</script>

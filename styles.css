@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #0c350b;
+    font: 1em 'Poppins';
+    font-weight: 600;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav {
+    background-color: #0c350b;
+    height: 80px;
+}
+.nav .name{
+    color: white;
+    margin-right: 420px;
+    font-size: 34px;
+    text-align: center;
+   margin-top: 14px;
+   font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.nav ul li {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: inline-flex;
+    height: 80px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    padding: 30px;
+    margin-left: 30px;
+    justify-content: space-around;
+    color: white;
+    font-size: 17px;
+
+}
+.nav ul li a:hover{
+    /* text-decoration: underline; */
+    font-size: 18px;
+    color: white;
+    transition: ease;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 30px; /* Adjust the margin as needed */
+}
+
+.crop_cards{
+ 
+  justify-content: center;
+  width: 100%;
+  margin-block: 2rem;
+  gap: 2rem;
+  background-color: #0c350b;
+}
+.crop_cards .crop_row {
+    display: flex;
+    flex-direction: row;
+}
+.crop_cards .crop_row .crop {
+    height: 300px;
+    width: 200px;
+    margin: 40px 90px;
+    background-color: #9BCF53;
+}
+.crop_cards .crop_row .crop .crop_img{
+    width: 200px;
+    height: auto;
+    background-color: #0c350b;
+}
+
+.crop_row{
+    display: inline-flex;
+    flex-direction: row;
+}
+.crop_img img{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 170px;
+  display: block;
+  /* object-fit: cover;} */}
+  .crop_cards .crop_row .crop .crop_name{
+    width: 200px;
+    text-align: center;
+    align-self: center;
+    display: grid;
+    
+  }
+  .crop_cards .crop_row .crop .crop_name button{
+    align-self: center;
+    text-align: center;
+    height: 25px;
+    width: 150px;
+    margin: 25px 23px;
+    border: none;
+    background-color: #416D19;
+    border-radius: 5px;
+  }
+  .container {
+    position: relative;
+    max-width: 1438px;
+    width: 100%;
+    padding: 40px;
+    background-color: #9BCF53;
+  }
+  .container .box {
+    padding: 50px 30px;
+    overflow: hidden;
+  }
+  .image img {
+    /* width: auto; */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10%;
+    opacity: .8;
+    /* border: 3px solid #fff; */
+  }
+  .card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: transparent;
+    box-shadow:
+      inset 20px 20px 20px rgba(0, 0, 0, .05),
+      5px 25px 20px rgba(0, 0, 0, .05),
+      5px 20px 30px rgba(0, 0, 0, .05),
+      inset -20px -20px 25px rgba(70, 130, 30, 0.9);
+    border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
+    transition: .5s ease-in-out;
+  }
+  .card:hover {
+    border-radius: 50%;
+  }
+  /* .card::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 15%;
+    opacity: .9;
+  }
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 85px;
+    width: 15px;
+    height: 15px;
+    background: #0c350b;
+    border-radius: 25%;
+    opacity: .9;
+  } */
+  .card .card-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .card-content .name-profession {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    color: #0c350b;
+  }
+  .name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .name-profession .profession {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .card-content .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+  }
+  .card-content .rating i {
+    font-size: 22px;
+    color: var(--clr);
+    margin: 0 2px;
+    opacity: .75;
+  }
+  .card-content button {
+    position: relative;
+    padding: 8px 35px;
+    background: #0c350b;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    opacity: .75;
+    margin-top: 30px;
+  }
+  .card-content button a{
+      text-decoration: none;
+      cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+  }
+  .card-content button::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    height: 5px;
+    background: rgba(5, 113, 27, 0.5);
+    border-radius: 5px;
+  }
+  .box .swiper-button-next,
+  .box .swiper-button-prev {
+    color: #0c350b;
+  }
+  .box .swiper-button-next {
+    right: 0;
+  }
+  .box .swiper-button-prev {
+    left: 0;
+  }
+  .box .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #063d15;
+  }
